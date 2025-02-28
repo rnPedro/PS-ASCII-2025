@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Pedro Henrique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="images/ascii-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="section sobre">
+            <h1>Sobre Mim</h1>
+            <div class="content">
+                <img src="images/pedrao.jpeg" alt="Pedro Henrique">
+                <p>Prazer, sou Pedro Henrique, estudante de Sistemas de Informação na UFU e Ciência de Dados na Uniube. Sou um profissional dedicado, disciplinado e comprometido, com experiência no desenvolvimento back-end e blockchain. Durante minha trajetória, atuei como estagiário na Compass UOL, na trilha de AWS e Blockchain, onde adquiri conhecimentos sólidos e desenvolvi habilidades essenciais para o mercado. Após esse período, fui efetivado como programador Trainee na mesma empresa. Tenho grande facilidade em trabalhar em equipe, cumprir prazos e manter uma comunicação clara e eficaz. Além disso, sou movido por uma verdadeira paixão pela tecnologia e pelo seu poder transformador. Acredito que ela não apenas facilita a vida das pessoas, mas também tem um papel fundamental na construção de um planeta mais sustentável e justo em todos os contextos. Para mim, a inovação é uma ferramenta para resolver problemas reais e criar um impacto positivo na sociedade.</p>
+                <div class="curiosidades">
+                    <div class="curiosidade-card">
+                        <div class="curiosidade-card-inner">
+                            <div class="curiosidade-card-front">
+                                <h3>Investimentos</h3>
+                            </div>
+                            <div class="curiosidade-card-back">
+                                <p>Gosto de estudar e aplicar estratégias de investimentos para o crescimento financeiro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curiosidade-card">
+                        <div class="curiosidade-card-inner">
+                            <div class="curiosidade-card-front">
+                                <h3>Blockchain</h3>
+                            </div>
+                            <div class="curiosidade-card-back">
+                                <p>Adoro explorar as possibilidades da tecnologia blockchain para criar soluções descentralizadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curiosidade-card">
+                        <div class="curiosidade-card-inner">
+                            <div class="curiosidade-card-front">
+                                <h3>Basquete</h3>
+                            </div>
+                            <div class="curiosidade-card-back">
+                                <p>Sou fã de basquete e adoro jogar nas horas vagas.</p>
+                                <span class="basquete-animacao">
+                                    <i class="fas fa-basketball-ball basquete-icone"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section habilidades">
+            <h1>Habilidades</h1>
+            <div class="container">
+                <div class="buttons">
+                    <button id="educacaoBtn">Comunicação</button>
+                    <button id="habilidadesBtn">Habilidades Técnicas</button>
+                    <button id="softSkillsBtn">Soft Skills</button>
+                </div>
+                <div class="topics">
+                    <p id="educacao" class="active">Gosto de me comunicar com as pessoas e sempre ouvir elas também.</p>
+                    <p id="habilidadesTecnicas">Possuo conhecimentos e certificações em algumas tecnologias como JavaScript, Node.js, SQL, Solidity, React, AWS, VScode, API e APIRestful</p>
+                    <p id="softSkills">Comunicação, trabalho em equipe e gestão do tempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section projetos">
+            <h1>Projetos</h1>
+            <div class="content">
+                <ul>
+                    <li onclick="openModal('modal1')">Pharmacy DAO: O projeto é uma DAO (Organização Autônoma Descentralizada) de uma farmácia que gerencia Tokens ERC1155 de prescrições médicas. <a href="https://github.com/PedroLeale/blockchain-apprentice-projeto-final" target="_blank">Repositório</a></li>
+                    <li onclick="openModal('modal2')">Blockchain em typescript: Esse projeto eu fiz sozinho para colocar a mão na massa e entender mais sobre a implementação de uma blockchain na prática e também aprender sobre a linguagem typescript e alguns comandos NPM. <a href="https://github.com/rnPedro/Blockchain-TypeScript" target="_blank">Repositório</a></li>
+                    <li onclick="openModal('modal3')">Estágio em Blockchain e AWS na Compass UOL: No PB (Programa de Bolsas), participei ativamente das reuniões diárias, onde discuti meu progresso em diversos cursos da Udemy. Explorei uma ampla variedade de tópicos relacionados à programação, blockchain e AWS, incluindo Node.js, criptomoedas, serviços da AWS e suas aplicações. No último mês, trabalhei em um projeto prático com minha equipe chamado "Farmácia Descentralizada". Desenvolvemos esse projeto utilizando Solidity para contratos inteligentes, Node.js para o backend, React e CSS para o frontend, e integramos serviços da AWS.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato" class="section contato">
+            <h1>Contatos</h1>
+            <div class="icons">
+                <a href="https://github.com/rnPedro"><i class="fab fa-github"></i></a>
+                <a href="mailto:pedronatalr@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=17992110269"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/pedro-henrique-rossetto-natal-33216b245/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Pedro Rossetto - 2025</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content animate__animated animate__fadeIn">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Pharmacy DAO</h2>
+            <p>O projeto é uma DAO (Organização Autônoma Descentralizada) de uma farmácia que gerencia Tokens ERC1155 de prescrições médicas. <a href="https://github.com/PedroLeale/blockchain-apprentice-projeto-final" target="_blank">Repositório</a></p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content animate__animated animate__fadeIn">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Blockchain em TypeScript</h2>
+            <p>Esse projeto, eu fiz sozinho para colocar a mão na massa e entender mais sobre a implementação de uma blockchain na prática e também aprender sobre a linguagem TypeScript e alguns comandos NPM. <a href="https://github.com/rnPedro/Blockchain-TypeScript" target="_blank">Repositório</a></p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content animate__animated animate__fadeIn">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Estágio em Blockchain e AWS na Compass UOL</h2>
+            <p>No PB (Programa de Bolsas), participei ativamente das reuniões diárias, onde discuti meu progresso em diversos cursos da Udemy. Explorei uma ampla variedade de tópicos relacionados à programação, blockchain e AWS, incluindo Node.js, criptomoedas, serviços da AWS e suas aplicações. No último mês, trabalhei em um projeto prático com minha equipe chamado "Farmácia Descentralizada". Desenvolvemos esse projeto utilizando Solidity para contratos inteligentes, Node.js para o backend, React e CSS para o frontend, e integramos serviços da AWS.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
